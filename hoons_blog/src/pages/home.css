@@ -1,0 +1,60 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+
+}
+
+.title{
+    width: 100%;
+    font-size: 40px;
+    position: fixed;
+    padding: 25px;
+    color:white;
+    background-color: rgb(97, 108, 206);
+}
+
+.titlepadding{
+    padding-top: 145px;
+}
+.content{
+    display: flex;
+    flex-basis: 100%;
+}
+
+/* category css */
+.catebnt{
+    font-size: 15px bold;
+    width: 120px;
+    display: flex;
+}
+.bt_pd{
+    height: 7px;
+}
+.category { 
+    flex-basis: 120px;
+    padding: 15px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border:rgb(143, 223, 226) solid 0.5px;
+}
+/*  */
+
+/* intro css */
+.introcont{
+    padding-left: 20px;
+}
+.git{
+    color: rgb(71, 71, 71);
+    width: 200%; 
+}
+/*  */
+
+.cg_pd{
+    
+    padding-left: 160px;
+    margin-bottom: 100%;
+    /* margin-left: 200px; */
+}
