@@ -15,7 +15,9 @@ const Category = () => {
       <Button className='catebnt' variant="outlined" color="primary">project</Button>
       </Link>
       <div className='bt_pd'></div>
+      <Link to ='/study'>
       <Button className='catebnt' variant="outlined" color="primary">My study</Button>
+      </Link>
       <div className='bt_pd'></div>
       
     

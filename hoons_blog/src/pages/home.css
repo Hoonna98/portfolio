@@ -52,6 +52,34 @@
 }
 /*  */
 
+/* study css */
+.study_top{
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    width: 0px;
+    margin-left: 20px;
+}
+.study_title{
+    
+    padding : 40px;
+    font-size: 30px;
+    text-align: center;
+    width: 400px;
+    border:rgb(143, 223, 226) solid 0.5px;
+    display: flex;
+}
+.study_list{
+    display: flex;
+    padding-left: 20px;
+}
+/* .depart_bnt{
+    
+} */
+/*  */
+.test{
+    margin-top: 5000px;
+}
 .cg_pd{
     
     padding-left: 160px;

@@ -3,7 +3,9 @@ import {Route, Switch} from 'react-router-dom';
 import Title from './title';
 import Category from './category';
 import Project from './project';
+import Study from './study';
 import Intro from './intro';
+import Table from './table';
 
 
 function Home() {
@@ -18,6 +20,12 @@ function Home() {
             <div className="cg_pd">
               <Switch>
                 <Route path='/project' component={Project}></Route>
+                
+                <Route path='/study' component={Study}>
+                  <Route path='/study' component={Table}>
+                  </Route>
+                </Route>
+          
                 <Route path='/' component={Intro}></Route>
               </Switch>
             </div>
