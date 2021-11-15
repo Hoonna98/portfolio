@@ -28,7 +28,11 @@ const Study = () => {
             <div className='study_title'>네트워크 이론</div>
             <div className='study_content'>작성날짜:222</div>
             <div className='study_end'>
-              <Button className='study_see'>보기</Button>
+            <Button className='study_see' onClick={()=> setModalIsOpen(true)}>보기
+              </Button>
+              <Modal className='modal_'isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+                <Any_study/>
+              </Modal>
               <div className='study_date'>작성 : 2021.11.14</div>
             </div>
           </div>
@@ -39,7 +43,11 @@ const Study = () => {
             <div className='study_title'>네트워크 이론</div>
             <div className='study_content'>작성날짜:222</div>
             <div className='study_end'>
-              <Button className='study_see'>보기</Button>
+            <Button className='study_see' onClick={()=> setModalIsOpen(true)}>보기
+              </Button>
+              <Modal className='modal_'isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+                <Any_study/>
+              </Modal>
               <div className='study_date'>작성 : 2021.11.14</div>
             </div>
           </div>
@@ -48,7 +56,11 @@ const Study = () => {
             <div className='study_title'>네트워크 이론</div>
             <div className='study_content'>작성날짜:222</div>
             <div className='study_end'>
-              <Button className='study_see'>보기</Button>
+            <Button className='study_see' onClick={()=> setModalIsOpen(true)}>보기
+              </Button>
+              <Modal className='modal_'isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+                <Any_study/>
+              </Modal>
               <div className='study_date'>작성 : 2021.11.14</div>
             </div>
           </div>
