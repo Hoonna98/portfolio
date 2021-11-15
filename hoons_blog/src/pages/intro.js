@@ -4,9 +4,8 @@ const Intro = () => {
   return (
     <div className="introcont">
         <div>
-            <h1>My git</h1>
-            <a href = "https://github.com/Hoonna98">https://github.com/Hoonna98</a>
-            
+          <h1>My git</h1>
+          <a href = "https://github.com/Hoonna98">https://github.com/Hoonna98</a>
         </div>
         <div className = 'intro'>
             <h1>Language</h1>
