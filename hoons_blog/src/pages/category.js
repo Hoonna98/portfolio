@@ -1,5 +1,4 @@
 import './home.css';
-import { useState } from 'react';
 import {Button} from "@material-ui/core";
 import { Link } from 'react-router-dom';
 
@@ -7,19 +6,18 @@ import { Link } from 'react-router-dom';
 const Category = () => {
   return (
     <div className='category'>
-      <Link to ='/'>
-      <Button className='catebnt' variant="outlined" color="primary">Intro</Button>
+      <Link to ='/' style={{ textDecoration: 'none' }}>
+      <Button className='catebnt' variant="contained">Intro</Button>
       </Link>
       <div className='bt_pd'></div>
-      <Link to ='/project'>
-      <Button className='catebnt' variant="outlined" color="primary">project</Button>
+      <Link to ='/project' style={{ textDecoration: 'none' }}>
+      <Button className='catebnt' variant="contained">Project</Button>
       </Link>
       <div className='bt_pd'></div>
-      <Link to ='/study'>
-      <Button className='catebnt' variant="outlined" color="primary">My study</Button>
+      <Link to ='/study' style={{ textDecoration: 'none' }}>
+      <Button className='catebnt' variant="contained">Study</Button>
       </Link>
       <div className='bt_pd'></div>
-      
     
     </div>
   );

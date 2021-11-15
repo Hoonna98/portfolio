@@ -2,7 +2,7 @@ import './home.css';
 
 const Project = () => {
   return (
-    <div>
+    <div className="p_container">
         project
     </div>
   );
