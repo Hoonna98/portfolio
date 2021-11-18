@@ -36,7 +36,7 @@
 }
 
 .content_right{
-    height: 560px;
+    height: 585px;
     background-color: rgb(188, 167, 146);
     color: rgb(71,73,73);
     overflow:scroll;
@@ -160,6 +160,16 @@
     display: flex; justify-content: center;
     /* object-fit: scale-down; */
 }
+.pr_img{
+    width: 96%;
+    height: auto;
+    max-height: 100%;
+    max-width: 96%;
+    align-items: center;
+    display: flex; justify-content: center;
+    /* object-fit: scale-down; */
+}
+
 .direc_cnt{
     display: flex;
     flex-direction: column;

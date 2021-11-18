@@ -4,6 +4,7 @@ import Category from './category';
 import Project from './project';
 import Study from './study';
 import Intro from './intro';
+import Contact from './contact';
 
 
 function Home() {
@@ -18,8 +19,8 @@ function Home() {
         <div className="content_right">
           <Switch>
             <Route path='/project' component={Project}></Route>                
-            <Route path='/study' component={Study}>
-            </Route>
+            <Route path='/study' component={Study}></Route>
+            <Route path='/contact' component={Contact}></Route>
             <Route path='/' component={Intro}></Route>
           </Switch>
         </div>
