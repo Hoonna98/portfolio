@@ -5,13 +5,14 @@ import Project from './project';
 import Study from './study';
 import Intro from './intro';
 import Contact from './contact';
+import { Button } from '@material-ui/core';
 
 
 function Home() {
   return (
     <div className="Home">
       <div className="left_con">
-        <div className="title_left">Hoon's blog</div>
+        <div className="title_left"><Button disabled='disabled'><img  className='blog_title' src={require('../title.png').default}/></Button></div>
         <Category/>
       </div>
       <div className="right_con">
