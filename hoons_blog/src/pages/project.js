@@ -20,8 +20,15 @@ const Project = () => {
         <div className='in_study'>
           
           <div className='in_content'>
-            <div className='study_title'>B2C Project</div>
-            <div className='study_content'>작성날짜:222</div>
+            <div className='study_title'>Portfolio</div>
+            <div className='study_content'>
+              React를 이용하여 portfolio 사이트를 구현한 개인 프로젝트입니다.
+              <br/><br/>Intro : 약력 및 활동
+              <br/>Project : 수행한 project 이력 및 개요
+              <br/>Study : 전공 및 자격증 취득 관련 정리본
+              <br/>
+              <br/>위의 내용으로 구성되어 있고 EC2를 이용해 서버 구현 하였습니다.
+              </div>
             <div className='study_end'>
               <Button className='study_see' onClick={()=> setModalIsOpen(true)}>보기
               </Button>
@@ -49,7 +56,7 @@ const Project = () => {
         {/* 가로 추가 */}
         <div className='in_study'>
           <div className='in_content'>
-            <div className='study_title'>네트워크 이론</div>
+            <div className='study_title'>B2C Project</div>
             <div className='study_content'>작성날짜:222</div>
             <div className='study_end'>
             <Button className='study_see' onClick={()=> set2ModalIsOpen(true)}>보기

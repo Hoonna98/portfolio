@@ -18,9 +18,9 @@ const Category = () => {
       <Button className='catebnt' variant="contained">Study</Button>
       </Link>
       <div className='bt_pd'></div>
-      <Link to ='/contact' style={{ textDecoration: 'none' }}>
+      {/* <Link to ='/contact' style={{ textDecoration: 'none' }}>
       <Button className='catebnt' variant="contained">Contact</Button>
-      </Link>
+      </Link> */}
       <div className='bt_pd'></div>
     
     </div>

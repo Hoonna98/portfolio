@@ -1,5 +1,6 @@
 .Home{
     /* position: fixed; */
+    min-width: 600px;
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -7,6 +8,7 @@
 }
 .left_con{
     width: 20%;
+    max-width: 220px;
     height: 84vh;
     padding-left: 6.25vw;
     padding-top: 8vh;
@@ -63,6 +65,7 @@
 /* category css */
 .catebnt{
     width: 16vw;
+    max-width: 210px;
     height: 60px;
     padding-left: 20px;
     color: rgb(188, 167, 146);
@@ -71,8 +74,12 @@
     height: 15px;
 }
 .category { 
+    align-items: center;
     /* flex-basis: 120px; */
-    padding:15px;
+    /* padding:15px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+
     /* padding-top: 40px;
     padding-left: 50px; */
     height: 67vh;
@@ -87,7 +94,38 @@
 /* intro css */
 .introcont{
     padding-left: 25px;
+    display: flex;
+    height: 67vh;
+    
 }
+.intro_left{
+    background-color: rgb(208, 187, 166);
+    color: rgb(33,33,33);
+    border-radius: 10px 10px 10px 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+.intro_right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-left: thick double white;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.intro_t{
+    border-bottom: thick double snow;
+}
+.intro{
+    border-bottom: 0.3px solid snow;
+    margin-bottom: 3px;
+    /* width: 70%; */
+}
+
 .git{
     color: rgb(71, 71, 71);
     
@@ -98,16 +136,19 @@
 .study{
     display: flex;
     flex-direction: row;
+
 }
 .in_study{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width:45%;
+    max-width: 400px;
     padding: 25px;
     padding-bottom: 0px;
     
 }
 .in_content{
+    min-width: 270px;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -125,6 +166,9 @@
 .study_content{
     border-top: whitesmoke solid 0.5px;
     padding-top: 8px;
+    max-height: 215px;
+    text-overflow: ellipsis;
+    overflow: auto;
     height: 76%;
     text-overflow: ellipsis; 
 }
@@ -142,7 +186,7 @@
 .study_date{
     width: 50%;
     border-left: whitesmoke solid 0.5px;
-    padding-top: 6px;
+    padding-top: 2px;
     font-size: 15px;
     color: black;
     text-align: center;
