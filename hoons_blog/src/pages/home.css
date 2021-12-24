@@ -1,3 +1,4 @@
+@media (min-width: 480px){
 .Home{
     /* position: fixed; */
     min-width: 600px;
@@ -75,19 +76,13 @@
 }
 .category { 
     align-items: center;
-    /* flex-basis: 120px; */
-    /* padding:15px; */
     padding-top: 15px;
     padding-bottom: 15px;
-
-    /* padding-top: 40px;
-    padding-left: 50px; */
     height: 67vh;
     width: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
-    
 }
 /*  */
 
@@ -140,15 +135,14 @@
 }
 .in_study{
     display: flex;
-    flex-direction: column;
-    width:45%;
-    max-width: 400px;
-    padding: 25px;
-    padding-bottom: 0px;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
 }
 .in_content{
-    min-width: 270px;
+    min-width: 300px;
+    max-width: 380px;
+    width: 25vw;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -156,7 +150,8 @@
     background-color: rgb(208, 187, 166);
     color: rgb(33,33,33);
     border-radius: 10px 10px 10px 10px;
-    margin-bottom: 50px;
+    margin: 40px;
+    margin-right: 0px;
 }
 .study_title{
     /* text-align: center; */
@@ -180,7 +175,6 @@
 }
 .study_see{
     width: 50%;
-    
     color: rgb(33,33,33);
 }
 .study_date{
@@ -249,4 +243,152 @@
     width: 100%;
     height: 100%;
     align-items: center;
+}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+.Home{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+.left_con{
+    width: 93vw;
+    height: 12vh;
+    padding: 3.5vw;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( to bottom, white,  rgb(222, 222, 222));
+}
+.title_left{
+    width: 94vw;
+    padding-top: 2vh;
+    height: 10vh;
+    background-color: rgb(241, 237, 233);
+}
+.blog_title{
+    height: 7vh;
+    width: 65vw;
+    font-size: 50px bold;
+    color:rgb(139, 136, 134);
+}
+.category { 
+    height: 4vh;
+    /* width: 100%; */
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.catebnt{
+    width: 31.4vw;
+    height: 4vh;
+    color: rgb(188, 167, 146);
+}
+.bt_pd{
+    width: 0px;
+}
+.right_con{
+    width: 93vw;
+    min-height: 85.5vh;
+    padding-right: 3.5vw;
+    padding-left: 3.5vw;
+    background: linear-gradient( to top,rgb(188, 167, 146), rgb(168, 147, 136));
+}
+.content_right{
+    width: 100%;
+    height: 100%;
+    padding : 3vw;
+
+    overflow: scroll;
+}
+/* intro */
+.intro_left{
+    background-color: rgb(208, 187, 166);
+    color: rgb(33,33,33);
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.intro_right{
+    display: flex;
+    flex-direction: column;
+    border-top: thick double white;
+    padding-left: 5px;
+    padding-right: 25px;
+
+}
+.intro_t{
+    border-bottom: thick double snow;
+}
+.intro{
+    border-bottom: 0.3px solid snow;
+    margin-bottom: 3px;
+    /* width: 70%; */
+}
+/* study css */
+.study{
+    display: flex;
+    flex-direction: row;
+
+}
+.in_study{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+}
+.in_content{
+    min-width: 300px;
+    max-width: 380px;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 300px;
+    background-color: rgb(208, 187, 166);
+    color: rgb(33,33,33);
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 7px;
+    margin-bottom: 8px;
+}
+.study_title{
+    /* text-align: center; */
+    font-size: 25px;
+    height: 14%;
+}
+.study_content{
+    border-top: whitesmoke solid 0.5px;
+    padding-top: 8px;
+    max-height: 215px;
+    text-overflow: ellipsis;
+    overflow: auto;
+    height: 76%;
+    text-overflow: ellipsis; 
+}
+.study_end{
+    border-top: whitesmoke solid 0.5px;
+    padding-top: 10px;
+    display: flex;
+    height: 10%;
+}
+.study_see{
+    width: 50%;
+    color: rgb(33,33,33);
+}
+.study_date{
+    width: 50%;
+    border-left: whitesmoke solid 0.5px;
+    padding-top: 2px;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+
+
 }

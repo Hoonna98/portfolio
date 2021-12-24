@@ -57,12 +57,8 @@ const Study = () => {
               <div className='study_date'>작성 : 2021.12.19</div>
             </div>
           </div>
-        </div>
-        <div>
-          
-        </div>
+        
         {/* data communication */}
-        <div className='in_study'>
           <div className='in_content'>
             <div className='study_title'>데이터 통신</div>
             <div className='study_content'>

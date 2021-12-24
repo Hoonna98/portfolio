@@ -18,7 +18,6 @@ const Project = () => {
     <div className='study'>
         {/* 세로 추가 */}
         <div className='in_study'>
-          
           <div className='in_content'>
             <div className='study_title'>Portfolio</div>
             <div className='study_content'>
@@ -51,10 +50,7 @@ const Project = () => {
               <div className='study_date'>작성 : 2021.11.14</div>
             </div>
           </div>
-        </div>
-
-        {/* 가로 추가 */}
-        <div className='in_study'>
+        
           <div className='in_content'>
             <div className='study_title'>B2C Project</div>
             <div className='study_content'>작성날짜:222</div>
