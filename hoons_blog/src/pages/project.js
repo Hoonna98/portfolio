@@ -25,8 +25,10 @@ const Project = () => {
               <br/><br/>Intro : 약력 및 활동
               <br/>Project : 수행한 project 이력 및 개요
               <br/>Study : 전공 및 자격증 취득 관련 정리본
+              <br/>Archive : 발생한 Error 정리 및 해결법과
+              백준 문제 풀이, 코드 구현 및 시스템 구축에 관한 내용 정리본
               <br/>
-              <br/>위의 내용으로 구성되어 있고 EC2를 이용해 서버 구현 하였습니다.
+              
               </div>
             <div className='study_end'>
               <Button className='study_see' onClick={()=> setModalIsOpen(true)}>보기

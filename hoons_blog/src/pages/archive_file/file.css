@@ -1,0 +1,15 @@
+.filecont{
+    padding: 25px;
+}
+.file_title{
+    width: 100%;
+    font-size: 30px;
+    text-decoration: black;
+}
+.file_img{
+    width: 60vw;
+    height: auto;
+}
+.file_content{
+    line-height: 25px;
+}
