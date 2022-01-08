@@ -1,18 +1,9 @@
 import './home.css';
-import React, {useState} from 'react';
-import Modal from 'react-modal';
-import {Button} from "@material-ui/core";
-import Net_study from './study/st_network';
-import Comp_study from './study/st_complier';
-import DC_study from './study/st_datacommu';
-import Any_study3 from './study/any3';
+import React from 'react';
+import {Link} from 'react-router-dom';
+
 
 const Study = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [modal1IsOpen, set1ModalIsOpen] = useState(false);
-  const [modal2IsOpen, set2ModalIsOpen] = useState(false);
-  const [modal3IsOpen, set3ModalIsOpen] = useState(false);
-  const [modal4IsOpen, set4ModalIsOpen] = useState(false);
   
   return (
     <div className='study'>
@@ -28,11 +19,9 @@ const Study = () => {
               <br/><br/>네트워크를 처음 접했을 당시 정리한 기본이 되는 내용입니다.
             </div>
             <div className='study_end'>
-              <Button className='study_see' onClick={()=> setModalIsOpen(true)}>보기
-              </Button>
-              <Modal className='modal_'isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-                <Net_study/>
-              </Modal>
+              <Link className='study_see' to ='/study/st_network' style={{ textDecoration: 'none' }}>
+                보기
+              </Link>
               <div className='study_date'>작성 : 2021.12.19</div>
             </div>
           </div>
@@ -49,12 +38,10 @@ const Study = () => {
             <br/>과정을 순차적으로 정리한 자료입니다.
             </div>
             <div className='study_end'>
-              <Button className='study_see' onClick={()=> set1ModalIsOpen(true)}>보기
-              </Button>
-              <Modal className='modal_'isOpen={modal1IsOpen} onRequestClose={() => set1ModalIsOpen(false)}>
-                <Comp_study/>
-              </Modal>
-              <div className='study_date'>작성 : 2021.12.19</div>
+            <Link className='study_see' to ='/study/st_complier' style={{ textDecoration: 'none' }}>
+                보기
+              </Link>
+              <div className='study_date'>작성 : 2021.12.20</div>
             </div>
           </div>
         
@@ -68,12 +55,10 @@ const Study = () => {
             <br/>Wifi, Bluetooth, Cellular에 대해 소개합니다.
             </div>
             <div className='study_end'>
-            <Button className='study_see' onClick={()=> set2ModalIsOpen(true)}>보기
-              </Button>
-              <Modal className='modal_'isOpen={modal2IsOpen} onRequestClose={() => set2ModalIsOpen(false)}>
-                <DC_study/>
-              </Modal>
-              <div className='study_date'>작성 : 2021.12.19</div>
+            <Link className='study_see' to ='/study/st_datacommu' style={{ textDecoration: 'none' }}>
+                보기
+              </Link>
+              <div className='study_date'>작성 : 2021.12.22</div>
             </div>
           </div>
 
@@ -87,12 +72,10 @@ const Study = () => {
             <br/><br/>등의 내용을 정리한 OS 배경 지식입니다.
             </div>
             <div className='study_end'>
-            <Button className='study_see' onClick={()=> set3ModalIsOpen(true)}>보기
-              </Button>
-              <Modal className='modal_'isOpen={modal3IsOpen} onRequestClose={() => set3ModalIsOpen(false)}>
-                <Any_study3/>
-              </Modal>
-              <div className='study_date'>작성 : 2021.12.19</div>
+            <Link className='study_see' to ='/study/st_os' style={{ textDecoration: 'none' }}>
+                보기
+              </Link>
+              <div className='study_date'>작성 : 2021.12.25</div>
             </div>
           </div>
         </div>

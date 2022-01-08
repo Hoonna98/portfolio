@@ -38,34 +38,26 @@ const images = [
   require("./dc_img/33.jpg").default,
   require("./dc_img/34.jpg").default,
   require("./dc_img/35.jpg").default,
-  require("./dc_img/36.jpg").default
 ];
 export default function Study() {
   const [index, setIndex] = useState(0);
   const next = () => {
-    setIndex((i) => (i + 2) % images.length);
+    setIndex((i) => (i + 1) % images.length);
   };
   const prev = () => {
     setIndex(
-      (i) => (((i - 2) % images.length) + images.length) % images.length
+      (i) => (((i - 1) % images.length) + images.length) % images.length
     );
   };
 
   return (
     <div> 
-      <div className='img_cnt'>
-        <div className='direc_cnt'>
-          <p className='direc_pad'/>
-          <button className='direc_bnt' onClick={prev}><img className='direc_img' src={require('./img/left.png').default}/></button>
-          <div className='direc_pad'/>
-        </div>
-        
-        <img className="st_img" src={images[index]} alt="1" />
-        <img className="st_img" src={images[index+1]} alt="2" />
-        <div className='direc_cnt'>
-          <p className='direc_pad'/>
-          <button className='direc_bnt' onClick={next}><img className='direc_img' src={require('./img/right.png').default}/></button>
-          <div className='direc_pad'/>
+      <div className='study_cont'>
+        <img className="st_img" src={images[index]} alt="" />
+        <div className="st_bottom">
+          <button className='direc_bnt' onClick={prev}>이전</button>
+          <div className="st_position">{index+1}/{images.length}</div>
+          <button className='direc_bnt' onClick={next}>다음</button>
         </div>
       </div>
     </div>

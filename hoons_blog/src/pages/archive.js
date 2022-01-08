@@ -9,7 +9,7 @@ const Archive = () => {
 
   return (
     <div>
-        <TableError ></TableError>
+        <TableError></TableError>
         <TableCode></TableCode>
         <TableBJ></TableBJ>
         

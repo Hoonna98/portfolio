@@ -1,9 +1,11 @@
+@media (min-width: 480px){
 .filecont{
     padding: 25px;
 }
 .file_title{
     width: 100%;
     font-size: 30px;
+    color: black;
     text-decoration: black;
 }
 .file_img{
@@ -12,4 +14,49 @@
 }
 .file_content{
     line-height: 25px;
+    border-bottom: black 1px solid;
+    width: 60vw;
+    padding-bottom: 20px;
+    color: black;
+}
+.code{
+    width: 50vw;
+    background-color: rgb(26, 49, 59);
+    /* height: 25px; */
+    color: whitesmoke;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 15px;
+}
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .filecont{
+        padding-left: 8px;
+    }
+    .file_title{
+        width: 100%;
+        font-size: 20px;
+        color: black;
+        text-decoration: black;
+    }
+    .file_img{
+        width: 85vw;
+        height: auto;
+    }
+    .file_content{
+        line-height: 25px;
+        border-bottom: black 1px solid;
+        width: 90vw;
+        padding-bottom: 10px;
+        color: black;
+    }
+    .code{
+        width: 81vw;
+        background-color: rgb(26, 49, 59);
+        /* height: 25px; */
+        color: whitesmoke;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-left: 15px;
+    }
 }

@@ -17,28 +17,54 @@ const TableCode = () => {
 
         <div className='table_content'>
           <div className='table_title'>
-            <Link to ='/archive_table/err1' style={{ textDecoration: 'none' }}>
-              
+            <Link to ='/archive_table/code1' style={{ textDecoration: 'none' }}>
+              AWS VPC 구축 1
             </Link>
           </div>
           <div className='table_date'>
-            2022.01.03
+            2022.01.04
           </div>
         </div>
+
+
         <div className='table_content'>
           <div className='table_title'>
-            <Link to ='/archive_table/err2' style={{ textDecoration: 'none' }}>
-            
+            <Link to ='/archive_table/code2' style={{ textDecoration: 'none' }}>
+              AWS VPC 구축 2
+            </Link>
+          </div>
+          <div className='table_date'>
+            2022.01.04
+          </div>
+        </div>
+        
+
+        <div className='table_content'>
+          <div className='table_title'>
+          <Link to ='/archive_table/code3' style={{ textDecoration: 'none' }}>
+              REST API
             </Link>
           </div>
           <div className='table_date'>
             2022.01.07
           </div>
         </div>
-        
+
+        <div className='table_content'>
+          <div className='table_title'>
+          <Link to ='/archive_table/code4' style={{ textDecoration: 'none' }}>
+              Flask REST API 만들기
+            </Link>
+          </div>
+          <div className='table_date'>
+            2022.01.08
+          </div>
+        </div>
+
+
         <div className='table_content_low'>
           <div className='table_title'>
-            
+          
           </div>
           <div className='table_date'>
             
