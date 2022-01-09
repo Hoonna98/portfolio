@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 
 
 const TableCode = () => {
+
   return (
     <div className='table_cnt'>
+      <div className='table_cnt2'>
         <div className='table_header'>
           <div className='table_title'>
             AWS 시스템 및 서버 구축
@@ -61,10 +63,10 @@ const TableCode = () => {
           </div>
         </div>
 
-
+        </div>
         <div className='table_content_low'>
           <div className='table_title'>
-          
+            
           </div>
           <div className='table_date'>
             
