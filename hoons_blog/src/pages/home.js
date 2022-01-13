@@ -12,10 +12,15 @@ import Intro from './intro';
 import Archive from './archive';
 import FileE1 from './archive_file/err1';
 import FileE2 from './archive_file/err2';
+import FileC0 from './archive_file/code0';
 import FileC1 from './archive_file/code1';
 import FileC2 from './archive_file/code2';
 import FileC3 from './archive_file/code3';
 import FileC4 from './archive_file/code4';
+import FileC5 from './archive_file/code5';
+import FileC6 from './archive_file/code6';
+import FileC7 from './archive_file/code7';
+import FileC8 from './archive_file/code8';
 import { Button } from '@material-ui/core';
 
 
@@ -44,10 +49,15 @@ function Home() {
             <Route path='/archive' component={Archive}></Route>
             <Route path='/archive_table/err1' component={FileE1}></Route>
             <Route path='/archive_table/err2' component={FileE2}></Route>
+            <Route path='/archive_table/code0' component={FileC0}></Route>
             <Route path='/archive_table/code1' component={FileC1}></Route>
             <Route path='/archive_table/code2' component={FileC2}></Route>
             <Route path='/archive_table/code3' component={FileC3}></Route>
             <Route path='/archive_table/code4' component={FileC4}></Route>
+            <Route path='/archive_table/code5' component={FileC5}></Route>
+            <Route path='/archive_table/code6' component={FileC6}></Route>
+            <Route path='/archive_table/code7' component={FileC7}></Route>
+            <Route path='/archive_table/code8' component={FileC8}></Route>
             <Route path='/' component={Intro}></Route>
           </Switch>
         </div>
